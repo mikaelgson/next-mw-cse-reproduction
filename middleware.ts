@@ -1,8 +1,6 @@
 import { NextRequest, NextResponse } from "next/server"
 
-export function middleware(req: NextRequest, res: NextResponse) {
-  return res
-}
+export function middleware() {}
 
 /**
  * This middlware must exist and match the page where the bug appears
