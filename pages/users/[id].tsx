@@ -31,8 +31,9 @@ const StaticPropsDetail = ({ item, errors }: Props) => {
 export default StaticPropsDetail
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  // We'll pre-render only these paths at build time.
-  // { fallback: false } means other routes should 404.
+  /**
+   * Bug only appears if paths is empty (no prebuild pages at build time)
+   */
   return { paths: [], fallback: "blocking" }
 }
 

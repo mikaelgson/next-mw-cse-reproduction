@@ -1,18 +1,15 @@
 module.exports = {
-  env: {
-    isDevelopment: process.env.VERCEL_ENV === "development",
-    isPreview: process.env.VERCEL_ENV === "preview",
-    isProduction: process.env.VERCEL_ENV === "production",
-  },
-
   reactStrictMode: true,
 
   i18n: {
-    locales: ["sv-FI", "sv", "nb", "fi"],
+    locales: ["sv", "en"],
     defaultLocale: "sv",
   },
 
   async rewrites() {
+    /**
+     * This must exist for bug to appear, does not have to match
+     */
     return [
       {
         source: "/foo",
