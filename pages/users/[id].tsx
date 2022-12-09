@@ -45,7 +45,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     const item = sampleUserData.find((data) => data.id === Number(id))
     // By returning { props: item }, the StaticPropsDetail component
     // will receive `item` as a prop at build time
-    return { props: { item }, revalidate: 60 }
+    return { props: { item }, revalidate: 10 }
   } catch (err: any) {
     return { props: { errors: err.message } }
   }

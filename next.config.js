@@ -24,13 +24,11 @@ module.exports = {
   },
 
   async rewrites() {
-    return {
-      afterFiles: [
-        {
-          source: "/foo",
-          destination: `/bar`,
-        },
-      ],
-    }
+    return [
+      {
+        source: "/foo",
+        destination: `/bar`,
+      },
+    ]
   },
 }
