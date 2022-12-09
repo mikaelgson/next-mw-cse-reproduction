@@ -25,7 +25,7 @@ module.exports = {
 
   async rewrites() {
     return {
-      beforeFiles: [
+      afterFiles: [
         {
           source: "/foo",
           destination: `/bar`,
