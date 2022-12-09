@@ -7,6 +7,11 @@ module.exports = {
 
   reactStrictMode: true,
 
+  i18n: {
+    locales: ["default", "sv", "sv-FI", "nb", "fi"],
+    defaultLocale: "default",
+  },
+
   async rewrites() {
     return [
       {
