@@ -25,12 +25,7 @@ module.exports = {
 
   async rewrites() {
     return {
-      beforeFiles: [
-        {
-          source: "/api/graphql",
-          destination: `https://www.google.com`,
-        },
-      ],
+      beforeFiles: [],
     }
   },
 }
